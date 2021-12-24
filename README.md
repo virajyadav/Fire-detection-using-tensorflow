@@ -347,7 +347,7 @@ To run any of the scripts, type “idle” in the Anaconda Command Prompt (with 
 If everything is working properly, the object detector will initialize for about 10 seconds and then display a window showing any objects it’s detected in the image!
 
 <p align="center">
-  <img src="doc/detector2.jpg">
+  <img src="doc/result_22.jpg">
 </p>
 
 If you encounter errors, please check out the Appendix: it has a list of errors that I ran in to while setting up my object detection classifier. You can also trying Googling the error. There is usually useful information on Stack Exchange or in TensorFlow’s Issues on GitHub.
