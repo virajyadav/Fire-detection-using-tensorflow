@@ -1,6 +1,4 @@
-# Fire-detection-using-tensorflow
-fire detection using object detection api of tensorflow 
-# How To Train an Object Detection Classifier for Multiple Objects Using TensorFlow (GPU) on Windows 10
+# How To Train an Object Detection Classifier for fire Using TensorFlow (GPU) on Windows 10
 
 
 ## Introduction
