@@ -1,4 +1,4 @@
-# How To Train an Object Detection Classifier for fire Using TensorFlow (GPU) on Windows 10
+# How To Train an Object Detection Classifier for fire Using TensorFlow (GPU)
 
 
 ## Introduction
