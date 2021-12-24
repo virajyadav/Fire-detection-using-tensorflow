@@ -173,10 +173,8 @@ Now that the TensorFlow Object Detection API is all set up and ready to go, we n
 #### 3a. Gather Pictures
 TensorFlow needs hundreds of images of an object to train a good detection classifier. To train a robust classifier, the training images should have random objects in the image along with the desired objects, and should have a variety of backgrounds and lighting conditions. There should be some images where the desired object is partially obscured, overlapped with something else, or only halfway in the picture. 
 
-For my Pinochle Card Detection classifier, I have six different objects I want to detect (the card ranks nine, ten, jack, queen, king, and ace – I am not trying to detect suit, just rank). I used my iPhone to take about 40 pictures of each card on its own, with various other non-desired objects in the pictures. Then, I took about another 100 pictures with multiple cards in the picture. I know I want to be able to detect the cards when they’re overlapping, so I made sure to have the cards be overlapped in many images.
-
 <p align="center">
-  <img src="doc/collage.jpg">
+  <img src="doc/test.jpg">
 </p>
 
 You can use your phone to take pictures of the objects or download images of the objects from Google Image Search. I recommend having at least 200 pictures overall. I used 311 pictures to train my card detector.
@@ -406,18 +404,6 @@ rate_index = tf.reduce_max(tf.where(tf.greater_equal(global_step, boundaries),
                                       [0] * num_boundaries))
 ```
 
-[Ref: Tensorflow Issue#3705](https://github.com/tensorflow/models/issues/3705#issuecomment-375563179)
 
-#### 6. ImportError: DLL load failed: The specified procedure could not be found.   (or other DLL-related errors)
-This error occurs because the CUDA and cuDNN versions you have installed are not compatible with the version of TensorFlow you are using. The easiest way to resolve this error is to use Anaconda's cudatoolkit package rather than manually installing CUDA and cuDNN. If you ran into these errors, try creating a new Anaconda virtual environment:
-```
-conda create -n tensorflow2 pip python=3.5
-```
-Then, once inside the environment, install TensorFlow using CONDA rather than PIP:
-```
-conda install tensorflow-gpu
-```
-Then restart this guide from Step 2 (but you can skip the part where you install TensorFlow in Step 2d).
-
-#### 7. In Step 2g, the Jupyter Notebook runs all the way through with no errors, but no pictures are displayed at the end.
-If you run the full Jupyter Notebook without getting any errors, but the labeled pictures still don't appear, try this: go in to object_detection/utils/visualization_utils.py and comment out the import statements around lines 29 and 30 that include matplotlib. Then, try re-running the Jupyter notebook. (The visualization_utils.py script changes quite a bit, so it might not be exactly line 29 and 30.)
+made by viraj yadav
+you can contact me on mail virajyadav2497@gmail.com for any query.
